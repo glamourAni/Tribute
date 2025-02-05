@@ -1,0 +1,180 @@
+@import url("https://fonts.googleapis.com/css2?family=Baskervville:ital@0;1&family=Lexend+Giga:wght@100..900&family=Playwrite+NG+Modern:wght@100..400&display=swap");
+
+* {
+	box-sizing: border-box;
+	margin: 0;
+}
+body {
+	padding: 0;
+	font-family: "Baskervville", serif;
+	position: relative;
+}
+#title {
+	color: #ffd;
+	font-family: "Lexend Giga", serif;
+	background: rgb(40, 56, 93);
+
+	text-align: center;
+	padding: 0.2em 0;
+	font-size: 1.9rem;
+	width: 100%;
+	top: 0;
+	bottom: 0;
+	height: 95px;
+	position: fixed;
+}
+#title > span {
+	display: block;
+	/* margin-top: 0; */
+	font-size: 0.97rem;
+}
+#tribute-info {
+	display: flex;
+	flex-direction: row-reverse;
+	margin-top: 2em;
+	padding: 90px 15%;
+	justify-content: space-between;
+	gap: 2.5em;
+}
+#img-div {
+	/* width: 100px; */
+	flex: 1 1 220px;
+}
+#img-div > img {
+	width: 100%;
+}
+.text {
+	flex: 1 1 300px;
+	margin: 5% 0;
+	line-height: 1.5em;
+}
+.text > h3 {
+	font-size: 1.6rem;
+	margin-bottom: 0.5em;
+}
+.text > p,
+footer p {
+	margin-bottom: 1em;
+	font-size: 1.12rem;
+}
+.more-info {
+	margin: 2em 0;
+}
+.more-info,
+footer {
+	padding: 30px 15%;
+	margin-top: 7em;
+}
+.more-info > h3 {
+	text-align: center;
+	margin-bottom: 2em;
+	font-size: 1.4rem;
+	font-weight: 600;
+}
+.achievements ul {
+	display: flex;
+
+	justify-content: space-between;
+	gap: 6em;
+	height: 300px;
+	margin-bottom: -2em;
+	margin-top: 0;
+}
+.achievements > ul > li {
+	font-weight: 500;
+	color: rgb(0, 0, 0);
+	font-size: 1.1rem;
+	border: 1px solid transparent;
+	list-style: none;
+	border-radius: 3px;
+	box-shadow: 2px 2px 4px 0px #123, -2px -2px 4px 0px #123;
+
+	padding: 1.2em 1em;
+}
+.left {
+	align-self: center;
+	flex: 1 1 0;
+}
+.right {
+	align-self: end;
+	flex: 1 1 0;
+}
+#quote {
+	background-color: rgb(40, 56, 93);
+	height: 120px;
+	text-align: center;
+	line-height: 120px;
+	/* position: relative; */
+	color: #ffd;
+	font-size: 1.7rem;
+	font-weight: 600;
+}
+.links {
+	display: flex;
+	justify-content: space-between;
+}
+.links ul li {
+	/* display: flex; */
+	list-style-type: none;
+	margin-bottom: 0.7em;
+
+	/* padding: 0.2em 0.9em; */
+}
+box-icon {
+	color: #fff;
+	fill: #fff;
+	font-size: 0.1em;
+}
+ul > li > a {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	text-decoration: none;
+	background-color: #011122;
+	color: #ffd;
+	width: 100%;
+	padding: 0.5em 1em;
+	font-size: 1.1rem;
+	font-weight: 600;
+}
+ul > li > a:hover {
+	transition: 0.2s ease-in-out;
+	background-color: #011122ad;
+}
+footer {
+	display: flex;
+	justify-content: space-between;
+	background-color: rgb(40, 56, 93);
+	border-top-left-radius: 2em;
+	border-top-right-radius: 2em;
+	color: #ffd;
+}
+#divider {
+	height: 10em;
+	width: 0.2em;
+	background-color: #5e5e5a;
+}
+.heading {
+	font-size: 1.2rem;
+	font-weight: 600;
+	color: #ffd;
+	margin-bottom: 1.3em;
+	text-align: center;
+}
+footer a {
+	color: #efefea8d;
+	text-decoration: none;
+}
+.date {
+	font-size: 1.2rem;
+	font-weight: 600;
+	margin-bottom: 0.7em;
+	display: block;
+	font-family: "Lexend Giga", serif;
+}
+#column-divider {
+	/* width: 100%; */
+
+	margin: 12em;
+	border-bottom: 2px solid #5e5e5a;
+}
