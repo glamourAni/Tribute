@@ -10,7 +10,7 @@ body {
 	position: relative;
 }
 #title {
-	color: #ffd;
+	color: #fff;
 	font-family: "Lexend Giga", serif;
 	background: rgb(40, 56, 93);
 
@@ -28,23 +28,38 @@ body {
 	/* margin-top: 0; */
 	font-size: 0.97rem;
 }
+#tribute-info,
+.more-info,
+footer {
+	padding-left: 18%;
+	padding-right: 18%;
+}
 #tribute-info {
 	display: flex;
-	flex-direction: row-reverse;
+	/* flex-direction: row-reverse; */
 	margin-top: 2em;
-	padding: 90px 15%;
+	padding-top: 70px;
 	justify-content: space-between;
 	gap: 2.5em;
 }
 #img-div {
 	/* width: 100px; */
-	flex: 1 1 220px;
+	flex: 1 0 0px;
+	align-self: center;
 }
-#img-div > img {
-	width: 100%;
+
+#image {
+	display: block;
+	max-width: 100%;
+	/* width: 100%; */
+	text-align: center;
+}
+#img-caption {
+	font-size: 0.9rem;
+	font-style: italic;
 }
 .text {
-	flex: 1 1 300px;
+	flex: 1 0 0px;
 	margin: 5% 0;
 	line-height: 1.5em;
 }
@@ -55,19 +70,16 @@ body {
 .text > p,
 footer p {
 	margin-bottom: 1em;
-	font-size: 1.12rem;
+	font-size: 1.2rem;
 }
 .more-info {
 	margin: 2em 0;
 }
-.more-info,
-footer {
-	padding: 30px 15%;
-	margin-top: 7em;
-}
+
 .more-info > h3 {
 	text-align: center;
-	margin-bottom: 2em;
+	margin-top: 3em;
+	margin-bottom: 3em;
 	font-size: 1.4rem;
 	font-weight: 600;
 }
@@ -77,13 +89,12 @@ footer {
 	justify-content: space-between;
 	gap: 6em;
 	height: 300px;
-	margin-bottom: -2em;
-	margin-top: 0;
+	/* margin-top: 0; */
 }
 .achievements > ul > li {
 	font-weight: 500;
 	color: rgb(0, 0, 0);
-	font-size: 1.1rem;
+	font-size: 1.2rem;
 	border: 1px solid transparent;
 	list-style: none;
 	border-radius: 3px;
@@ -104,21 +115,20 @@ footer {
 	height: 120px;
 	text-align: center;
 	line-height: 120px;
-	/* position: relative; */
-	color: #ffd;
+	color: #fff;
 	font-size: 1.7rem;
 	font-weight: 600;
+	margin: 6em 0;
+	text-wrap: wrap;
 }
 .links {
 	display: flex;
 	justify-content: space-between;
+	margin-bottom: 6em;
 }
 .links ul li {
-	/* display: flex; */
 	list-style-type: none;
 	margin-bottom: 0.7em;
-
-	/* padding: 0.2em 0.9em; */
 }
 box-icon {
 	color: #fff;
@@ -131,7 +141,7 @@ ul > li > a {
 	justify-content: center;
 	text-decoration: none;
 	background-color: #011122;
-	color: #ffd;
+	color: #fff;
 	width: 100%;
 	padding: 0.5em 1em;
 	font-size: 1.1rem;
@@ -147,9 +157,11 @@ footer {
 	background-color: rgb(40, 56, 93);
 	border-top-left-radius: 2em;
 	border-top-right-radius: 2em;
-	color: #ffd;
+	color: #fff;
+	padding-top: 30px;
 }
 #divider {
+	margin: 0 2em;
 	height: 10em;
 	width: 0.2em;
 	background-color: #5e5e5a;
@@ -157,7 +169,7 @@ footer {
 .heading {
 	font-size: 1.2rem;
 	font-weight: 600;
-	color: #ffd;
+	color: #fff;
 	margin-bottom: 1.3em;
 	text-align: center;
 }
@@ -173,8 +185,109 @@ footer a {
 	font-family: "Lexend Giga", serif;
 }
 #column-divider {
-	/* width: 100%; */
-
-	margin: 12em;
+	margin: 10em 12em;
 	border-bottom: 2px solid #5e5e5a;
+}
+
+@media only screen and (max-width: 1700px) and (min-width: 1600px) {
+	#tribute-info,
+	.more-info,
+	footer {
+		padding-left: 16%;
+		padding-right: 16%;
+	}
+}
+@media only screen and (max-width: 1598px) and (min-width: 1450px) {
+	#tribute-info,
+	.more-info,
+	footer {
+		padding-left: 14%;
+		padding-right: 14%;
+	}
+}
+@media (max-width: 1448px) and (min-width: 1390px) {
+	#tribute-info,
+	.more-info,
+	footer {
+		padding-left: 10%;
+		padding-right: 10%;
+	}
+}
+@media only screen and (max-width: 1388px) and (min-width: 1200px) {
+	#tribute-info,
+	.more-info,
+	footer {
+		padding-left: 5%;
+		padding-right: 5%;
+	}
+}
+@media only screen and (max-width: 1198px) and (min-width: 1026px) {
+	#tribute-info,
+	.more-info,
+	footer {
+		padding-left: 3%;
+		padding-right: 3%;
+	}
+}
+@media only screen and (max-width: 1024px) and (min-width: 768px) {
+	#tribute-info {
+		flex-direction: column-reverse;
+	}
+	#tribute-info,
+	.more-info,
+	footer {
+		padding-left: 5%;
+		padding-right: 5%;
+	}
+}
+@media (max-width: 764px) {
+	#tribute-info,
+	.more-info,
+	footer {
+		padding-left: 2%;
+		padding-right: 2%;
+	}
+	#tribute-info {
+		flex-direction: column-reverse;
+	}
+	#quote {
+		line-height: 50px;
+		padding-top: 0.45em;
+	}
+	#quote > p > span {
+		display: inline-block;
+	}
+	.achievements ul {
+		flex-direction: column;
+		height: 400px;
+		height: unset;
+		gap: 1em;
+		margin-bottom: 1em;
+		/* justify-content: space-between; */
+	}
+	.left {
+		align-self: unset;
+		flex: 0 1 0;
+	}
+	.right {
+		align-self: unset;
+		flex: 0 1 0;
+	}
+	.links,
+	footer {
+		flex-direction: column;
+	}
+	#divider {
+		display: none;
+	}
+	.heading {
+		text-align: left;
+	}
+	footer > div {
+		margin-bottom: 2em;
+	}
+	#column-divider {
+		margin-right: 5%;
+		margin-left: 5%;
+	}
 }
